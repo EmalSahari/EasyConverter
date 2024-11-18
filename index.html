@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Advanced Image Converter</h1>
+    <p>Select your file and convert between various formats.</p>
+
+    <div class="upload-section">
+        <input type="file" id="upload" accept="image/*">
+        <select id="conversion-type">
+            <option value="heic-jpg">Convert HEIC to JPG</option>
+            <option value="heic-png">Convert HEIC to PNG</option>
+            <option value="webp-jpg">Convert WebP to JPG</option>
+            <option value="webp-png">Convert WebP to PNG</option>
+            <option value="png">Convert JPG to PNG</option>
+            <option value="jpg">Convert PNG to JPG</option>
+        </select>
+        <button id="convert">Convert</button>
+    </div>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+    <a id="download" download="converted.png" style="display:none;">Download Converted Image</a>
+
+    <div class="info-section">
+        <h2>Why Use Our Converter?</h2>
+        <p>Our image converter is a fast, reliable, and easy-to-use tool designed to meet all your image format needs. Whether you need to convert JPG to PNG, PNG to JPG, or even more advanced formats like WebP and HEIC, we've got you covered.</p>
+        <ul>
+            <li><strong>Free to Use:</strong> Enjoy unlimited conversions without any hidden costs.</li>
+            <li><strong>Simple and Efficient:</strong> No complicated software or downloads required. Just upload, convert, and download.</li>
+            <li><strong>Broad Compatibility:</strong> Supports a wide range of image formats for every purpose, from web optimization to professional printing.</li>
+            <li><strong>Secure and Private:</strong> Your files are processed directly in your browser, ensuring your data stays private.</li>
+        </ul>
+        <p>Make your file conversions quick and hassle-free—try it out today!</p>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
